@@ -1,2 +1,2 @@
 # message
-Laravia Message Package (the new heart core)
+message plugin for laravia (heart)

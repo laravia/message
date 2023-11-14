@@ -1,0 +1,51 @@
+{
+    "minimum-stability": "dev",
+    "name": "laravia/message",
+    "description": "laravia package message for heart",
+    "license": "license",
+    "authors": [
+        {
+            "name": "laravia",
+            "email": "code@laravia.art",
+            "homepage": "https://laravia.art"
+        }
+    ],
+    "homepage": "https://laravia.art",
+    "keywords": [
+        "Laravel",
+        "Laravia",
+        "Message"
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravia\\Message\\App\\": "./app",
+            "Laravia\\Message\\Database\\": "./database",
+            "Laravia\\Message\\Database\\Seeders\\": "./database/seeders"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravia\\Message\\App\\": "./app",
+            "Laravia\\Message\\Database\\": "./database",
+            "Laravia\\Message\\Database\\Seeders\\": "./database/seeders",
+            "Laravia\\Message\\Tests\\": "./tests"
+        }
+    },
+    "scripts": {
+        "post-root-package-update": []
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravia\\Message\\App\\Providers\\MessageServiceProvider"
+            ],
+            "aliases": {
+                "LaraviaMessage": "Laravia\\Message\\App\\Message"
+            }
+        }
+    }
+}
